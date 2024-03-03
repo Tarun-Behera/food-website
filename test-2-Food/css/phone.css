@@ -1,0 +1,118 @@
+body,
+html {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+/* navigation-bar */
+#navbar {
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 35px;
+}
+
+/* hamburger-menu-css */
+.menu {
+    height: 35px;
+    width: 35px;
+}
+
+.hamburger-icon {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    height: 5px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 4;
+    transition: 0.2s;
+}
+
+.menu-icon::before {
+    content: "";
+    height: 5px;
+    width: 25px;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: -7px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu-icon::after {
+    content: "";
+    height: 5px;
+    width: 25px;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 7px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+ul {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.212);
+    box-shadow: inset 0 0 500px #000;
+    backdrop-filter: blur(10px);
+    height: 100svh;
+    width: 100%;
+    transform: translateX(100%);
+    transition: .4s linear;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+
+ul li a {
+    color: black;
+}
+
+#hamburger:checked~ul {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+#hamburger:checked~.hamburger-icon .menu-icon {
+    background: transparent;
+}
+
+#hamburger:checked~.hamburger-icon .menu-icon::before {
+    transform: rotate(45deg);
+    background: rgb(230, 227, 227);
+    outline: 1px solid rgb(183, 183, 183);
+    top: 0;
+}
+
+#hamburger:checked~.hamburger-icon .menu-icon::after {
+    transform: rotate(-45deg);
+    outline: 1px solid rgb(183, 183, 183);
+    background: rgb(230, 227, 227);
+    top: 0;
+}
+
+/* home section */
+#home::before {
+    height: 100%;
+}
+
+#home .container {
+    display: none;
+}

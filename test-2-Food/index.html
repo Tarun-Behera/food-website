@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hungry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:1180px)" href="css/phone.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div class="loader"></div>
+
+    <!-- navigation bar -->
+    <nav id="navbar">
+      <!-- logo -->
+      <div class="logo">
+        <img src="logo1.jpeg" alt="Order Food" />
+      </div>
+
+      <!-- hamburger-menu -->
+      <input type="checkbox" name="check" id="hamburger" />
+      <label for="hamburger" class="hamburger-icon"><span class="menu-icon"></span></label>
+
+      <!-- contents in navigation bar -->
+      <ul>
+        <li><a class="contents" href="#home">Home</a></li>
+        <li><a class="contents" href="#service-container">Services</a></li>
+        <li><a class="contents" href="#our-clients">About us</a></li>
+        <li><a class="contents" href="#contact-us">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+      <div class="container">
+        <h1 class="h-primary center">Discover the best food & drinks Online</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius perspiciatis praesentium enim
+          ratione, delectus aliquam sed error corrupti mollitia Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Rem, repellendus!
+        </p>
+        <div class="search-bar">
+          <div class="search">
+            <button class="btn"><img src="search.png" alt="" /></button>
+            <input
+              type="search"
+              name="search resturant"
+              placeholder="Search for restaurant or a dish"
+              id="bar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section id="service-container">
+      <h1 class="h-primary">Our Services</h1>
+      <div id="service">
+        <a class="box">
+          <img src="chicken.jpg" alt="order food online" />
+          <div class="card-content">
+            <h2 class="secondary-h center">Order Online</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quas.</p>
+          </div>
+        </a>
+        <a class="box">
+          <img src="catering.jpg" alt="order food online" />
+          <div class="card-content">
+            <h2 class="secondary-h center">Catering Service</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quas.</p>
+          </div>
+        </a>
+        <a class="box">
+          <img src="vegetable1.jpg" alt="order food online" />
+          <div class="card-content">
+            <h2 class="secondary-h center">Order Vegetables</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quas.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- clients section -->
+    <section id="our-clients">
+      <h1 class="h-primary center h-secondary">Our Clients</h1>
+      <div class="client">
+        <div class="client-item">
+          <img src="Apple.png" alt="our client" />
+        </div>
+        <div class="client-item">
+          <img src="Google.png" alt="our client" />
+        </div>
+        <div class="client-item">
+          <img src="Microsoft.png" alt="our client" id="soft" />
+        </div>
+        <div class="client-item">
+          <img src="cosmic byte.png" alt="our client" />
+        </div>
+        <div class="client-item">
+          <img src="boat.jpg" alt="our client" />
+        </div>
+        <div class="client-item">
+          <img src="HP.jpg" alt="our client" />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us Section -->
+    <section id="contact-us">
+      <h1 class="h-primary center h-secondary">Contact Us</h1>
+      <div class="contact">
+        <form action="">
+          <div class="contact-item">
+            <label for="name">Name:</label>
+            <input type="text" name="your-name" id="name" placeholder="Enter Your name.." />
+          </div>
+          <div class="contact-item">
+            <label for="phone-no">Phone Number:</label>
+            <input type="text" name="phone" id="phone-no" placeholder="Enter Your phone.no.." />
+          </div>
+          <div class="contact-item">
+            <label for="email">Email:</label>
+            <input type="text" name="your-email" id="email" placeholder="Enter Your Email.." />
+          </div>
+          <div class="contact-item">
+            <label for="feedback">Feedback:</label>
+            <textarea name="reason" id="feedback" cols="10" rows="5"></textarea>
+          </div>
+        </form>
+      </div>
+      <button class="btn2">Submit</button>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="center">CopyRight &copy;www.Hungry.com. All rights reserved!</div>
+    </footer>
+  </body>
+</html>

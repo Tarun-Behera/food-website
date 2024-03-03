@@ -1,0 +1,28 @@
+/* media-queries */
+@media screen and (max-width: 1341px) {
+  #home {
+    padding: 20px 20px;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  #service .box {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  #service .box {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1181px) {
+  .menu {
+    display: none;
+  }
+}
