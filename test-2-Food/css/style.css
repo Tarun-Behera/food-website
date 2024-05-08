@@ -27,14 +27,6 @@ body {
   z-index: 3; */
 }
 
-/* #navbar::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.475);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-} */
 
 .logo {
 	margin: 10px 10px;
@@ -131,9 +123,9 @@ ul li a:hover {
 /* background image */
 #home::before {
 	content: "";
-	background: url("../food.jpg") no-repeat center/cover;
+	background: url(".././img/food.jpg") no-repeat center/cover;
 	position: absolute;
-	top: -100px;
+	top: -102px;
 	height: 115%;
 	width: 100%;
 	z-index: -1;
@@ -278,7 +270,7 @@ input#bar {
 
 #our-clients::before {
 	content: "";
-	background: url("../biryani.jpg") no-repeat center/cover;
+	background: url(".././img/biryani.jpg") no-repeat center/cover;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -316,7 +308,7 @@ input#bar {
 
 #contact-us::before {
 	content: "";
-	background: url("../contact.jpg") no-repeat center/cover;
+	background: url(".././img/contact.jpg") no-repeat center/cover;
 	position: absolute;
 	top: 0px;
 	height: 100%;
